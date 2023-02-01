@@ -1,4 +1,3 @@
-/* zrób hover dla buttona zwiastunu */
 .backgroundImage {
     background: no-repeat url("../assets/background-image.jpeg");
     width: 100vw;
@@ -11,6 +10,7 @@
     width: 100vw;
     height: 100vh;
     background-size: cover;
+
 }
 
 .navbar-nav {
@@ -45,8 +45,8 @@ body {
     width: 600px;
     height: 600px;
     position: absolute;
-    right: 300px;
-    bottom: 225px;
+    right: 325px;
+    bottom: 200px;
 }
 
 .trailerImage img {
@@ -78,19 +78,19 @@ body {
     background-size: contain;
 }
 
-.boxArtHover:hover {
+.boxArtHover:hover, .trailerHover:hover{
     width: 425px;
     height: 50px;
     background-size: cover;
 }
 
-.boxArtHover img:hover {
+.boxArtHover img:hover, .trailerHover img:hover {
     width: 400px;
 }
 
 .trailerButton {
     display: block;
-    width: 400px;
+    width: 296px;
     height: 35px;
     bottom: 300px;
     left: 500px;
@@ -120,8 +120,45 @@ body {
     left: 450px;
 }
 
-.aboutText {
-    position: absolute;
-    left: 825px;
-    top: 275px;
+.headerBackground {
+    background-image: url("../assets/about-background.png");
+    background-size: 100% 100%;
+    text-align: center;
 }
+
+.aboutText {
+    text-align: center;
+    line-height: 50px;
+}
+.aboutBackground {
+    background-image: url("../assets/about-background.png");
+    background-size: 100% 100%;
+    bottom: 200px;
+    right: 800px;
+    width: 900px;
+    height: 692px;
+    padding: 80px 60px;
+    position: absolute; 
+}
+.treeUp {
+    background-image: url("../assets/tree-up.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    z-index: 50;
+    width: 100%;
+    height: 500px;
+    background-position: top;
+    position: absolute;
+    top: 0px;
+}
+/* .treeDown {
+    background-image: url("../assets/tree-down.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 50;
+    width: 100%;
+    height: 400px;
+    background-position: bottom;
+    position: absolute;
+    bottom: -500px;
+} */
