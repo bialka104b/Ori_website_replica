@@ -180,6 +180,7 @@ body {
 .ratings {
     width: 50%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .ratings-one {
@@ -195,8 +196,8 @@ body {
     content: "";
     position: absolute;
     top: 31px;
-    left: 65px;
-    width: 10%;
+    left: -15px;
+    width: 14%;
     height: 110px;
     background-image: url("../assets/rating-feather.png");
     background-size: contain;
@@ -207,8 +208,8 @@ body {
     content: "";
     position: absolute;
     top: 31px;
-    right: 65px;
-    width: 10%;
+    right: -35px;
+    width: 14%;
     height: 110px;
     background-image: url("../assets/rating-feather.png");
     background-size: contain;
