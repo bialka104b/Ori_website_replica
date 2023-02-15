@@ -187,5 +187,7 @@ body {
     background-image: url("../assets/nav-feather.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+.ratings-two::after{
 
 }

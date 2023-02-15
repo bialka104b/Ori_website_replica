@@ -176,19 +176,37 @@ body {
     width: 100%;
     height: auto;
 }
+.ratings-one {
+    font-size: 3.25rem;
+    font-family: "Candara";
+    
+}
 
+.ratings-two {
+    font-size: 1rem;
+}
 .ratings-one::before {
     content: "";
     position: absolute;
     top: 40px;
-    right: 50px;
-    width: 110px;
+    left: 50px;
+    width: 24%;
     height: 110px;
-    background-image: url("../assets/nav-feather.png");
+    background-image: url("../assets/rating-feather.png");
     background-size: contain;
     background-repeat: no-repeat;
 
 }
 .ratings-two::after{
-
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 24%;
+    height: 110px;
+    background-image: url("../assets/rating-feather.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
 }
+/* scaleX(-1) */
