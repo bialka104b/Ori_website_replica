@@ -176,33 +176,39 @@ body {
     width: 100%;
     height: auto;
 }
+
+.ratings {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .ratings-one {
     font-size: 3.25rem;
     font-family: "Candara";
-    
 }
 
 .ratings-two {
     font-size: 1rem;
 }
-.ratings-one::before {
+
+.ratings::before {
     content: "";
     position: absolute;
-    top: 40px;
-    left: 50px;
-    width: 24%;
+    top: 31px;
+    left: 65px;
+    width: 10%;
     height: 110px;
     background-image: url("../assets/rating-feather.png");
     background-size: contain;
     background-repeat: no-repeat;
 
 }
-.ratings-two::after{
+.ratings::after{
     content: "";
     position: absolute;
-    top: 40px;
-    right: 50px;
-    width: 24%;
+    top: 31px;
+    right: 65px;
+    width: 10%;
     height: 110px;
     background-image: url("../assets/rating-feather.png");
     background-size: contain;
