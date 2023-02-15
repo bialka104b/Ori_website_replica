@@ -1,31 +1,56 @@
 .backgroundImage {
-    background: no-repeat url(".../assets/background-image.jpeg");
-    width: 100vw;
+    background: no-repeat url("../assets/background-image.jpeg");
+    width: 100%;
     height: 100vh;
     background-size: cover;
 }
 
-.navbar-nav {
+.backgroundImage2 {
+    background: no-repeat url("../assets/background-image-2.jpg");
     width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.navbar-nav {
     height: 100px;
     font-size: 25px;
-    font-family: Candara, Mool-Boran, sans-serif;
+    z-index: 1000;
 }
 
 .navbar-bg {
     background-image: url("../assets/nav-bg.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-size: 100% 110px;
+    justify-content: center;
+    width: 90%;
     padding: 0 50px;
+    z-index: 1000;
 }
 
 .nav-item {
-    padding: 30px;
+    padding: 0 10px;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 110px;
+    height: 110px;
+    background-image: url("../assets/nav-feather.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .mainHeader {
     margin: 0 auto 0 425px;
     width: 60%;
+    position: fixed;
+    z-index: 1000;
 }
 
 body {
@@ -37,8 +62,8 @@ body {
     width: 600px;
     height: 600px;
     position: absolute;
-    right: 300px;
-    bottom: 225px;
+    right: 325px;
+    bottom: 200px;
 }
 
 .trailerImage img {
@@ -70,19 +95,19 @@ body {
     background-size: contain;
 }
 
-.boxArtHover:hover {
+.boxArtHover:hover, .trailerHover:hover{
     width: 425px;
     height: 50px;
     background-size: cover;
 }
 
-.boxArtHover img:hover {
+.boxArtHover img:hover, .trailerHover img:hover {
     width: 400px;
 }
 
 .trailerButton {
     display: block;
-    width: 400px;
+    width: 296px;
     height: 35px;
     bottom: 300px;
     left: 500px;
@@ -110,4 +135,57 @@ body {
     margin-right: 50px;
     top: 325px;
     left: 450px;
+}
+
+.headerBackground {
+    background-image: url("../assets/about-background.png");
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+.aboutText {
+    text-align: center;
+    line-height: 50px;
+}
+.aboutBackground {
+    background-image: url("../assets/about-background.png");
+    background-size: 100% 100%;
+    top: 350px;
+    width: 100%;
+    height: 692px;
+    padding: 80px 60px;
+    position: absolute; 
+}
+.treeUp {
+    background-image: url("../assets/tree-up.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    z-index: 50;
+    width: 100%;
+    height: 500px;
+    background-position: top;
+    position: absolute;
+    top: 0px;
+}
+
+.awards {
+    background-image: url("../assets/background-awards.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    height: auto;
+}
+
+.ratings-one::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 110px;
+    height: 110px;
+    background-image: url("../assets/nav-feather.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
 }
